@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Mapster" Version="7.4.1-pre01" />
+      <PackageReference Include="Mapster.DependencyInjection" Version="1.0.2-pre01" />
+      <PackageReference Include="Mediator.Abstractions" Version="3.0.0-preview.27" />
+      <PackageReference Include="Mediator.SourceGenerator" Version="3.0.0-preview.27">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.47.0-preview.0" />
+      <PackageReference Include="XCloneModels" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\XClone.Infra.SqlServer\XClone.Infra.SqlServer.csproj" />
+    </ItemGroup>
+
+</Project>
